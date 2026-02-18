@@ -1,114 +1,106 @@
+<!-- VERSION ACTUALIZADA CON HEADER, HERO Y FOOTER MEJORADOS -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Observatorio para la Equidad Territorial</title>
-    assets/css/styles.css
-    https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Observatorio para la Equidad Territorial y el Reto Demográfico</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<!-- 🔵 HEADER STICKY -->
-<header class="navbar">
-    <div class="nav-container">
-        <div class="logo">Observatorio Territorial</div>
+  <!-- Enlace de accesibilidad -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
 
-        <nav class="nav-links">
-            index.htmlInicio</a>
-            que-es-el-observatorio.htmlEl Observatorio</a>
-            datos-analisis.htmlDatos y análisis</a>
-            publicaciones.htmlPublicaciones</a>
-            ayudas-iniciativas.htmlAyudas</a>
-            proyectos-emblematicos.htmlProyectos</a>
-            actualidad.htmlActualidad</a>
-            sabias-que.htmlSabías qué</a>
-        </nav>
+  <!-- HEADER actualizado -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <div class="logo-area">
+        <h1>Observatorio para la Equidad Territorial y el Reto Demográfico</h1>
+      </div>
 
-        <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+      <nav class="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="#que-es">¿Qué es?</a></li>
+          <li><a href="#datos">Datos y análisis</a></li>
+          <li><a href="#publicaciones">Publicaciones</a></li>
+          <li><a href="#ayudas">Ayudas e iniciativas</a></li>
+          <li><a href="#proyectos">Proyectos emblemáticos</a></li>
+          <li><a href="#actualidad">Actualidad</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
+  </header>
 
-<!-- 🔵 MOBILE MENU -->
-<div id="mobileMenu" class="mobile-menu">
-    index.htmlInicio</a>
-    que-es-el-observatorio.htmlEl Observatorio</a>
-    datos-analisis.htmlDatos y análisis</a>
-    publicaciones.htmlPublicaciones</a>
-    ayudas-iniciativas.htmlAyudas</a>
-    proyectos-emblematicos.htmlProyectos</a>
-    actualidad.htmlActualidad</a>
-    sabias-que.htmlSabías qué</a>
-</div>
+  <!-- HERO actualizado -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>Datos, análisis y evidencias para comprender el territorio</h2>
+        <p class="muted">Apoyo a la toma de decisiones públicas y promoción de la cohesión territorial.</p>
 
-<!-- 🌄 HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Datos, análisis y evidencias para comprender el territorio</h1>
-        <p>Un espacio para apoyar la toma de decisiones y promover la cohesión territorial en España.</p>
-        datos-analisis.htmlAcceder a los datos</a>
-    </div>
-</section>
-
-<!-- ⭐ ACCESOS DESTACADOS -->
-<section class="access-section">
-    <h2 class="section-title">Accesos destacados</h2>
-
-    <div class="grid-3">
-        datos-analisis.html
-            <h3>Datos y análisis</h3>
-            <p>Indicadores por municipio, provincia o comunidad autónoma.</p>
-        </a>
-
-        publicaciones.html
-            <h3>Publicaciones</h3>
-            <p>Informes y estudios clasificados por temática.</p>
-        </a>
-
-        ayudas-iniciativas.html
-            <h3>Ayudas e iniciativas</h3>
-            <p>Subvenciones, programas y líneas de financiación.</p>
-        </a>
-    </div>
-</section>
-
-<!-- 🎠 CARRUSEL “SABÍAS QUE” -->
-<section class="sabias-que">
-    <h2 class="section-title">Sabías que…</h2>
-
-    <div class="carousel" id="carousel">
-        <div class="carousel-item">🌱 El 84% de los municipios españoles tiene menos de 5.000 habitantes.</div>
-        <div class="carousel-item">🚜 El 61% del territorio español es rural.</div>
-        <div class="carousel-item">📉 Más de 3.000 municipios han perdido población desde 2000.</div>
-    </div>
-</section>
-
-<!-- 📰 ÚLTIMAS NOTICIAS -->
-<section class="news">
-    <h2 class="section-title">Actualidad</h2>
-    <div class="grid-3">
-        <div class="card">
-            <h3>Noticias</h3>
-            <p>Accede a novedades, comunicados y notas de prensa.</p>
+        <div class="cta-row">
+          <a href="#datos" class="btn btn-primary">Explorar datos</a>
+          <a href="#publicaciones" class="btn btn-ghost">Ver publicaciones</a>
         </div>
-        <div class="card">
-            <h3>Agenda</h3>
-            <p>Eventos, jornadas y encuentros territoriales.</p>
-        </div>
-        <div class="card">
-            <h3>Newsletter</h3>
-            <p>Suscríbete a “Conexión Rural”.</p>
-        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- 🔻 FOOTER -->
-<footer class="footer">
-    <p>© 2026 Observatorio para la Equidad Territorial — MITECO</p>
-    <p>#Aviso legal</a> · #Privacidad</a> · #Cookies</a></p>
-</footer>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="contenido-principal">
 
-assets/js/main.js</script>
+    <section id="accesos" class="accesos-section container">
+      <h2>Accesos destacados</h2>
+      <div class="accesos-grid">
+        <a href="#datos" class="card">Datos y análisis</a>
+        <a href="#publicaciones" class="card">Publicaciones</a>
+        <a href="#ayudas" class="card">Ayudas e iniciativas</a>
+        <a href="#proyectos" class="card">Proyectos emblemáticos</a>
+        <a href="#rural-proofing" class="card">Rural Proofing</a>
+        <a href="#actualidad" class="card">Actualidad</a>
+      </div>
+    </section>
+
+    <section id="que-es" class="content-section container">
+      <h2>¿Qué es el Observatorio?</h2>
+      <p>El Observatorio para la Equidad Territorial y el Reto Demográfico es una plataforma impulsada por el MITECO para analizar y monitorizar fenómenos vinculados al reto demográfico en España...</p>
+    </section>
+
+    <section id="datos" class="content-section container">
+      <h2>Datos y análisis</h2>
+      <p>Accede a indicadores por municipio, provincia, comunidad autónoma o nivel nacional.</p>
+    </section>
+
+    <section id="publicaciones" class="content-section container">
+      <h2>Publicaciones</h2>
+      <p>Repositorio de informes, estudios y análisis propios y de terceros.</p>
+    </section>
+
+    <section id="ayudas" class="content-section container">
+      <h2>Ayudas e iniciativas</h2>
+      <p>Subvenciones, programas y líneas de financiación vinculadas al reto demográfico.</p>
+    </section>
+
+    <section id="proyectos" class="content-section container">
+      <h2>Proyectos emblemáticos</h2>
+      <p>Casos inspiradores y experiencias respaldadas por la Secretaría General.</p>
+    </section>
+
+    <section id="actualidad" class="content-section container">
+      <h2>Actualidad</h2>
+      <p>Noticias, agenda, recursos y newsletter.</p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER actualizado -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Observatorio para la Equidad Territorial y el Reto Demográfico</p>
+      <p>https://www.miteco.gob.es/es.html</p>
+    </div>
+  </footer>
+
 </body>
 </html>

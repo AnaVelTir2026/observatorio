@@ -1,117 +1,88 @@
-<!--
-Observatorio para la Equidad Territorial y el Reto Demográfico
-Sitio estático listo para GitHub Pages
--->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Observatorio para la Equidad Territorial y el Reto Demográfico</title>
-
-  <!-- CSS principal -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Metadatos básicos -->
-  <meta name="description" content="Datos, análisis y evidencias para comprender el territorio, apoyar la toma de decisiones públicas y promover la cohesión territorial." />
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <!-- Accesibilidad: salto al contenido -->
-  <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
 
-  <!-- CABECERA -->
-  <header class="main-header">
-    <div class="container header-inner">
-      <div class="logo-area">
-        <!-- Si tenéis logo, sustituir por <img> -->
-        <h1 class="site-title">Observatorio para la Equidad Territorial y el Reto Demográfico</h1>
-      </div>
+<header class="site-header">
+  <div class="container header-inner">
+    <h1 class="logo">Observatorio para la Equidad Territorial y el Reto Demográfico</h1>
 
-      <nav class="main-nav" aria-label="Principal">
-        <ul>
-          <li><a href="#que-es">¿Qué es?</a></li>
-          <li><a href="#datos">Datos y análisis</a></li>
-          <li><a href="#publicaciones">Publicaciones</a></li>
-          <li><a href="#ayudas">Ayudas e iniciativas</a></li>
-          <li><a href="#proyectos">Proyectos emblemáticos</a></li>
-          <li><a href="#actualidad">Actualidad</a></li>
-        </ul>
-      </nav>
+    <nav class="nav">
+      <ul>
+       -es.html">¿Qué es?</a></li>
+        <li><a href="marco-normativo.html">Marco normativo</a></li>
+        <li><a href="rural-proofing.html">Rural Proofing</a></li>
+        <li><a href="datos-analisis.html">Datos y análisis</a></li>
+        <li><a href="publicaciones.html">Publicaciones</a></li>
+        <li><a href="ayudas.html">Ayudas</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="actualidad.html">Actualidad</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>Datos, análisis y evidencias para comprender el territorio</h2>
+    <p>Una plataforma del MITECO para apoyar la toma de decisiones públicas y promover la cohesión territorial.</p>
+
+    <div class="cta-row">
+      <a href="datos-analisis.html" class="btn btn-primary">Explorar datos</a>
+      <a href="publicaciones.html" class="btn btn-secondary">Ver publicaciones</a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h2>Datos, análisis y evidencias para comprender el territorio</h2>
-        <p class="muted">Apoyo a la toma de decisiones públicas y promoción de la cohesión territorial.</p>
-        <div class="cta-row">
-          <a href="#datos" class="btn btn-primary">Explorar datos</a>
-          <a href="#publicaciones" class="btn btn-ghost">Ver publicaciones</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="container section">
+  <h2>Accesos destacados</h2>
 
-  <!-- CONTENIDO -->
-  <main id="contenido-principal">
+  <div class="grid-3">
+    <a class="card" href="que-es.html">
+      <h3>¿Qué es el Observatorio?</h3>
+      <p>Presentación, objetivos y áreas temáticas.</p>
+    </a>
 
-    <!-- Accesos destacados -->
-    <section id="accesos" class="accesos-section">
-      <div class="container">
-        <h2>Accesos destacados</h2>
-        <div class="accesos-grid">
-          <a href="#datos" class="card">Datos y análisis</a>
-          <a href="#publicaciones" class="card">Publicaciones</a>
-          <a href="#ayudas" class="card">Ayudas e iniciativas</a>
-          <a href="#proyectos" class="card">Proyectos emblemáticos</a>
-          <a href="#rural-proofing" class="card">Rural Proofing</a>
-          <a href="#actualidad" class="card">Actualidad</a>
-        </div>
-      </div>
-    </section>
+    <a class="card" href="marco-normativo.html">
+      <h3>Marco normativo</h3>
+      <p>Leyes estatales, autonómicas y europeas.</p>
+    </a>
 
-    <!-- ¿Qué es? (en formato tarjetas) -->
-    <section id="que-es" class="content-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>¿Qué es el Observatorio?</h2>
-        </div>
+    <a class="card" href="rural-proofing.html">
+      <h3>Rural Proofing</h3>
+      <p>Metodología y referencias.</p>
+    </a>
 
-        <!-- Tarjeta Presentación -->
-        <article class="card card-padded">
-          <h3>Presentación</h3>
-          <p>
-            El <strong>Observatorio para la Equidad Territorial y el Reto Demográfico</strong> es la
-            plataforma de referencia impulsada por el Ministerio para la Transición Ecológica y el
-            Reto Demográfico (MITECO) para analizar y monitorizar los fenómenos vinculados al reto
-            demográfico en España. Integra datos del sistema <strong>SIDAMUN</strong>, estudios,
-            normativa, ayudas y experiencias innovadoras para facilitar el diseño y evaluación de
-            políticas públicas con enfoque territorial.
-          </p>
-        </article>
+    <a class="card" href="datos-analisis.html">
+      <h3>Datos y análisis</h3>
+      <p>Acceso a indicadores y visualizaciones SIDAMUN.</p>
+    </a>
 
-        <!-- Tarjeta Objetivos -->
-        <article class="card card-padded">
-          <h3>Objetivos</h3>
-          <ul class="checklist">
-            <li><strong>Analizar y monitorizar el territorio:</strong> examinar la situación y evolución de los municipios desde una perspectiva integral (demográfica, económica, social, medioambiental y de acceso a servicios).</li>
-            <li><strong>Comparar realidades territoriales:</strong> identificar diferencias, desequilibrios y oportunidades entre municipios y regiones.</li>
-            <li><strong>Evaluar el impacto de las políticas públicas:</strong> medir el impacto territorial de las políticas vinculadas al reto demográfico y respaldar su diseño, seguimiento y evaluación.</li>
-            <li><strong>Apoyar la planificación estratégica:</strong> proveer información y herramientas que fortalezcan la planificación local y territorial, especialmente en contextos rurales.</li>
-            <li><strong>Impulsar la equidad y la cohesión territorial:</strong> identificar brechas territoriales y orientar intervenciones que promuevan la igualdad de oportunidades y la cohesión territorial.</li>
-            <li><strong>Garantizar transparencia y acceso abierto:</strong> asegurar la disponibilidad pública de datos, informes y recursos, favoreciendo un uso responsable y compartido de la información.</li>
-            <li><strong>Informar y conectar a los actores del territorio:</strong> difundir iniciativas de las administraciones y constituir un espacio de encuentro para gestores públicos, agentes privados, comunidad investigadora y ciudadanía.</li>
-          </ul>
-        </article>
+    <a class="card" href="ayudas.html">
+      <h3>Ayudas e iniciativas</h3>
+      <p>Líneas de apoyo al reto demográfico.</p>
+    </a>
 
-        <!-- Tarjetas áreas temáticas -->
-        <h3 class="mt-3">Áreas temáticas</h3>
-        <div class="accesos-grid mt-1">
-          <a href="#datos" class="card">
-            <strong>Demografía</strong>
+    <a class="card" href="proyectos.html">
+      <h3>Proyectos emblemáticos</h3>
+      <p>Experiencias respaldadas por la Secretaría General.</p>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Observatorio para la Equidad Territorial y el Reto Demográfico</p>
+    <p><a href="https://www.miteco.gob.es/es.html">MITECO</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
+

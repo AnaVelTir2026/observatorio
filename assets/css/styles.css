@@ -1,18 +1,9 @@
 /* ===============================
    Observatorio Equidad Territorial
    Estilos base modernos y accesibles
-   Escalas tipográficas fluidas
-   Paleta inspirada en MITECO
    =============================== */
 
-/* --- Paleta (ajustable) ---
-   Azul principal: #00427A
-   Teal acento:    #0F766E
-   Neutros:        #0B1220 (texto), #1F2937, #6B7280 (muted)
-   Fondos:         #FFFFFF, #F7FAFC (secciones)
-   Estado foco:    #F59E0B
-*/
-
+/* Paleta inspirada en MITECO (ajustable) */
 :root{
   --color-primary: #00427A;
   --color-primary-600: #03508F;
@@ -24,7 +15,6 @@
   --bg-soft: #F7FAFC;
   --focus: #F59E0B;
 
-  /* Tipografía y ritmo vertical */
   --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Noto Sans", Arial, sans-serif;
   --max-w: 1200px;
   --radius: 12px;
@@ -49,14 +39,16 @@ h1{ font-size: clamp(1.6rem, 2vw + 1.2rem, 2.2rem); }
 h2{ font-size: clamp(1.25rem, 1.5vw + 1rem, 1.8rem); }
 h3{ font-size: clamp(1.1rem, 1vw + .9rem, 1.3rem); }
 
-/* Layout contenedor */
+/* Contenedor */
 .container{
   max-width: var(--max-w);
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* Header fijo y navegación */
+.block{ display: block; }
+
+/* Header fijo */
 .main-header{
   position: sticky;
   top: 0;
@@ -65,7 +57,6 @@ h3{ font-size: clamp(1.1rem, 1vw + .9rem, 1.3rem); }
   backdrop-filter: saturate(180%) blur(8px);
   border-bottom: 1px solid var(--color-border);
 }
-
 .header-inner{
   display: flex;
   align-items: center;
@@ -73,14 +64,14 @@ h3{ font-size: clamp(1.1rem, 1vw + .9rem, 1.3rem); }
   gap: 1rem;
   padding: .8rem 0;
 }
-
-.logo-area h1{
+.site-title{
   font-size: clamp(1.1rem, 1.2vw + 1rem, 1.4rem);
   color: var(--color-primary);
   margin: 0;
-  font-weight: 700;
+  font-weight: 800;
 }
 
+/* Navegación */
 .main-nav ul{
   display: flex;
   flex-wrap: wrap;
@@ -118,7 +109,7 @@ h3{ font-size: clamp(1.1rem, 1vw + .9rem, 1.3rem); }
 }
 .hero-inner{
   display: grid;
-  grid-template-columns: 1.2fr;
+  grid-template-columns: 1fr;
   align-items: center;
   padding: clamp(2rem, 4vw + 1.5rem, 4.5rem) 0;
 }
@@ -132,6 +123,8 @@ h3{ font-size: clamp(1.1rem, 1vw + .9rem, 1.3rem); }
   font-size: clamp(1rem, .6vw + .95rem, 1.125rem);
   margin-bottom: 1.25rem;
 }
+
+/* Botones */
 .cta-row{
   display: flex;
   gap: .75rem;
@@ -160,23 +153,20 @@ h3{ font-size: clamp(1.1rem, 1vw + .9rem, 1.3rem); }
 }
 .btn-ghost:hover{ border-color: var(--color-primary-600); color: var(--color-primary); }
 
-/* Secciones genéricas */
+/* Secciones */
 section{ scroll-margin-top: 80px; }
 .content-section{
   padding: clamp(2rem, 4vw + 1rem, 4rem) 0;
 }
 .content-section:nth-of-type(even){ background: var(--bg-soft); }
-
-.section-header{
-  margin-bottom: 1rem;
-}
+.section-header{ margin-bottom: 1rem; }
 .section-header h2{
   display: inline-block;
   border-bottom: 3px solid var(--color-primary);
   padding-bottom: .25rem;
 }
 
-/* Accesos Destacados */
+/* Accesos destacados y rejillas */
 .accesos-section{ padding: 2.5rem 0; }
 .accesos-section h2{ margin-bottom: 1rem; }
 .accesos-grid{
@@ -190,6 +180,8 @@ section{ scroll-margin-top: 80px; }
 @media (max-width: 640px){
   .accesos-grid{ grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Tarjetas */
 .card{
   background: #fff;
   border: 1px solid var(--color-border);
@@ -198,7 +190,7 @@ section{ scroll-margin-top: 80px; }
   text-decoration: none;
   color: var(--color-text);
   font-weight: 700;
-  text-align: center;
+  text-align: left;
   box-shadow: var(--shadow-sm);
   transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
 }
@@ -207,58 +199,19 @@ section{ scroll-margin-top: 80px; }
   box-shadow: var(--shadow-md);
   border-color: #d8dee6;
 }
+.card-padded{
+  padding: 1.5rem;
+  font-weight: 400;
+}
+.card-padded h3{ margin-top: 0; }
 
-/* Listas de enlaces (publicaciones, observatorios) */
-.link-list{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: .75rem 1rem;
+/* Listas con check */
+.checklist{
+  padding-left: 1.25rem;
+  margin: .5rem 0 0 0;
 }
-@media (max-width: 800px){
-  .link-list{ grid-template-columns: 1fr; }
-}
-.link-list a{
-  display: inline-flex;
-  align-items: start;
-  gap: .6rem;
-  text-decoration: none;
-  color: var(--color-primary);
-  font-weight: 600;
-}
-.link-list a:hover{ text-decoration: underline; }
-
-/* Footer */
-.main-footer{
-  background: #0B1220;
-  color: #D1D5DB;
-  padding: 2rem 0;
-}
-.main-footer a{
-  color: #E5E7EB;
-  text-decoration: none;
-}
-.main-footer a:hover{ text-decoration: underline; }
-.footer-inner{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: .75rem 1rem;
-  justify-content: space-between;
-}
-
-/* Accesibilidad extra */
-:focus-visible{ outline: 3px solid var(--focus); outline-offset: 2px; }
-.skip-link{
-  position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
-}
-.skip-link:focus{
-  position: static; width: auto; height: auto; padding: .5rem .75rem; background: #fff; border: 2px solid var(--focus);
+.checklist li{
+  margin: .35rem 0;
 }
 
 /* Utilidades */
-.muted{ color: var(--color-muted); }
-.mt-0{ margin-top: 0; }
-.mt-1{ margin-top: .5rem; }
-.mt-2{ margin-top: 1rem; }
-.mt-3{ margin-top: 1.5rem; }
-.mt-4{ margin-top: 2rem; }
